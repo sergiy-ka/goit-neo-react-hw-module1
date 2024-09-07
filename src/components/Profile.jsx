@@ -13,7 +13,7 @@ const Profile = ({
                 <img
                     className={css.userImage}
                     src={image}
-                    alt="User avatar"
+                    alt={name}
                 />
                 <p className={css.userInfoName}>{name}</p>
                 <p>@{tag}</p>

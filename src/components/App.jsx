@@ -1,8 +1,10 @@
 import './App.css'
 import Profile from './Profile'
 import FriendList from './FriendList'
+import TransactionHistory from './TransactionHistory'
 import userData from '../userData.json';
 import friends from "../friends.json";
+import transactions from "../transactions.json";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
       />
       <p>Завдання 2. Список друзів</p>
       <FriendList friends={friends} />
+      <p>Завдання 3. Історія транзакцій</p>
+      <TransactionHistory items={transactions} />
     </>
   );
 };
